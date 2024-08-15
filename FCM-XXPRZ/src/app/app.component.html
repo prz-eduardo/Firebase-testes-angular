@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="box card1">
+    <input type="text" class="input-text" placeholder="Enter chat ID" #chatId>
+    <input type="text" class="input-text" placeholder="Enter message" #message>
+    <button class="save-button" (click)="adicionarMensagem(chatId.value, message.value, true)">Adicionar Mensagem</button>
+  </div>
+
+  <div class="box card2">
+    <input type="text" class="input-text" placeholder="Enter chat ID" #inputText>
+    <button class="save-button" (click)="buscarChat(inputText.value)">Buscar Chat</button>
+  </div>
+</div>
